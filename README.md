@@ -1,2 +1,0 @@
-# varystrategic.com
-Vary Website
