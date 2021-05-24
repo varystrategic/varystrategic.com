@@ -1,0 +1,50 @@
+:host {
+    padding-left: var(--width-gutter);
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    height: var(--height-hangline);
+}
+h1 {
+    align-self: flex-end;
+    padding-bottom: .66em;
+}
+
+p {
+    margin: 0 0 1em 0;
+    max-width: 30em;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+a {
+    margin: 1rem 0;
+    font-weight: 400;
+    letter-spacing: 0.033em;
+}
+
+h2 {
+    margin: 1rem 0;
+}
+
+.lists {
+    display: flex;
+    padding-bottom: var(--width-gutter);
+}
+.list:not(:first-child) {
+    margin-left: 2rem;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 0.033em;
+}
+h3 {
+    margin: .5em 0;
+}

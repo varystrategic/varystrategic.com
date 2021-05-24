@@ -1,0 +1,48 @@
+
+$width_gutter_small: $grid-gutter-width/3;
+
+$width_scrollbar: 11px;
+
+$height_title_bar: 2.5rem;
+$height_header: $height_title_bar + $width_gutter_small/2;
+
+$width_sidebar_left: 18rem;
+$width_sidebar_work: 20rem;
+
+$width_designer_left: 25rem;
+
+$height_horizontal_menu: $height_title_bar;
+$width_change_pane: 20rem;
+
+$account_pane_tab_size: 2rem;
+
+$width_workflow_main: 28rem;
+$width_workflow_pane: 16rem;
+$width_work_pane: 14rem;
+$width_work_pane_left_column: 2rem;
+$height_account_bar: 2.5rem;
+$height_workspace: calc( 100vh - #{$height_header} );
+$height_work_workspace: calc( #{$height_workspace} - #{$height_account_bar} );
+
+$badge_size: 1.75rem;
+
+:root {
+    --width_gutter_small: #{$width_gutter_small};
+    --width_scrollbar: #{$width_scrollbar};
+    --height_title_bar: #{$height_title_bar};
+    --height_header: #{$height_header};
+    --width_sidebar_left: #{$width_sidebar_left};
+    --width_sidebar_work: #{$width_sidebar_work};
+    --width_designer_left: #{$width_designer_left};
+    --height_horizontal_menu: #{$height_horizontal_menu};
+    --width_change_pane: #{$width_change_pane};
+    --account_pane_tab_size: #{$account_pane_tab_size};
+    --width_workflow_main: #{$width_workflow_main};
+    --width_workflow_pane: #{$width_workflow_pane};
+    --width_work_pane: #{$width_work_pane};
+    --width_work_pane_left_column: #{$width_work_pane_left_column};
+    --height_account_bar: #{$height_account_bar};
+    --height_workspace: #{$height_workspace};
+    --height_work_workspace: #{$height_work_workspace};
+    --badge_size: #{$badge_size};
+}

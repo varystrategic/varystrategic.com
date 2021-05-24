@@ -1,0 +1,51 @@
+
+
+.extra_actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    width: 3rem;
+    height: 1rem;
+}
+
+.extra_actions--badge-container {
+    position: absolute;
+    left: 2rem;
+    top: -2.8rem;
+    z-index: 2;
+    font-size: var(--font-size-xs);
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;    
+}
+
+.extra_actions--badge {
+    color: white;
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    border-radius: 50%;
+}
+.extra_actions--button {
+    padding: 0;
+    color: var(--color-action);
+    border: 0;
+
+    &,
+    svg {
+        margin: 0;
+        width: 3rem;
+        height: 2rem;
+    }
+}
+
+.extra_actions--nav {
+    flex-direction: column;
+
+    .nav-item {
+        display: block;
+        padding: 0.25em 0.5em;
+        text-align: left;
+    }
+}

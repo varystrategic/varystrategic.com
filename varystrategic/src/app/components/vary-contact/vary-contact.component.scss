@@ -1,0 +1,56 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-left: var(--width-gutter);
+}
+
+main {
+    width: var(--width-contact);
+    overflow: auto;
+}
+
+.contact_info {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    a {
+        font-size: .75rem;
+    }
+}
+
+.contact_form {
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: calc( var(--width-gutter) * .6 );
+
+    input,
+    textarea {
+        margin: .5rem 0 0 0;
+        width: 100%;
+        padding: .3em .6em;
+        font-size: .8rem;
+        color: white;
+        background: rgba(255,255,255,.1);
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+
+        &::placeholder {
+            color: rgba(255,255,255,.5);
+        }
+    }
+
+    textarea {
+        height: 5rem;
+    }
+
+    .button {
+        margin-top: .5rem;
+        padding: .6em 1.2em;
+        font-size: .66rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+    }
+}

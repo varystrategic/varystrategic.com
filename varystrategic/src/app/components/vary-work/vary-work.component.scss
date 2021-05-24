@@ -1,0 +1,15 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: calc( var(--height-hangline) - 1rem );
+    overflow: auto;
+}
+
+.work_item {
+    flex-shrink: 0;
+    margin: 1rem 0;
+    width: 30vw;
+    height: 20vw;
+    background-color: rgba(255,255,255,.1);
+}

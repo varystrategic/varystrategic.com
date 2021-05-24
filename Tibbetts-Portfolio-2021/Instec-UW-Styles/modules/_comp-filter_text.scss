@@ -1,0 +1,25 @@
+
+.workspace--search {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: 0.33rem;
+        height: 60%;
+        fill: rgba(0,0,0,0.5);
+
+        &.icon-close {
+            cursor: pointer;
+        }
+    }
+
+    .form-control {
+        padding-left: 1.75rem;
+
+        &::placeholder {
+            color: var(--gray-500);
+        }
+    }
+}

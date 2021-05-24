@@ -1,0 +1,23 @@
+
+/*- ONLY SASS VARIABLES AND MIXINS. NO CSS DECLARATIONS OR IMPORTS. */
+
+// themed overrides of built-in Bootstrap variables.
+// go to /Styles/themes/_theme.scss to switch theme
+@import 'themes/theme';
+
+// non-theme overrides of built-in Bootstrap variables.
+@import 'modules/bootstrap';
+
+// required Bootstrap
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+// theme and non-theme overrides of built-in Kendo variables.
+@import 'modules/kendo';
+
+// grid and major element spacing, dimensions, gutters, etc. variables.
+@import 'modules/spacing';
+
+// helper functions and reusable sass
+@import 'modules/placeholders';

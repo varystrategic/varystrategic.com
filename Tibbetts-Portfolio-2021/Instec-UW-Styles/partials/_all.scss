@@ -1,0 +1,10 @@
+
+// granular component-agnostic minutia.
+@import 'partials/base';
+
+// major elements. frame, header, sidebar, etc.
+@import 'partials/layout';
+
+// type styles that deviate from bootstrap defaults but not specific to any component.
+// font-family, font-size, font-weight, font-style only. colors in theme.
+@import 'partials/typography';

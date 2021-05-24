@@ -1,0 +1,37 @@
+
+%user_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--badge_size);
+    height: var(--badge_size);
+    line-height: 0;
+    font-size: calc( var(--badge_size) * 0.85 );
+    font-weight: var(--font-weight-bold);
+    color: white;
+    background-color: var(--color-primary-darker);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    &.has_image {
+        background-color: var(--gray-500);
+
+        .user_initials {
+            display: none;
+        }
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: white;
+    }
+}
+
+%scrollit {
+    overflow: hidden;
+    overflow-y: scroll;
+}

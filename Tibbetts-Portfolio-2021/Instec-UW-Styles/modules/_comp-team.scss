@@ -1,0 +1,206 @@
+
+@import 'themes/theme';
+@import 'modules/bootstrap';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+.team_section {
+    margin: 2rem 0;
+}
+
+::ng-deep {
+    /* contains shared styles from the 3 sections and
+       all styles from roles and groups */
+    
+    @import 'modules/comp-extra_actions';
+
+    .team_section--header {
+        display: flex;
+        align-items: center;
+        margin-bottom: var(--width_gutter_small);
+
+        > * {
+            margin: 0 var(--width_gutter_small) 0 0;
+        }
+
+        svg.icon-help {
+            width: 1rem;
+            height: 1rem;
+            color: var(--gray-600);
+        }
+    }
+
+    .team_section--grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 0.25fr));
+        grid-gap: var(--width_gutter_small);
+        margin: 0 calc( var(--width_gutter_small) * -1 );
+        padding: var(--width_gutter_small);
+        background-color: var(--gray-200);
+    }
+
+    .team_section--grid-zero {
+        justify-content: center;
+    }
+
+    .team_card {
+        padding: calc( var(--width_gutter_small) * 2 );
+        text-align: center;
+
+        svg {
+            color: var(--gray-600);
+        }
+    }
+
+    .team_card-zero {
+        align-items: center;
+        margin: 0;
+        width: calc( 100% - var(--width_gutter_small) );
+        height: auto;
+        padding: var(--width_gutter_small);
+        text-align: center;
+        background: none;
+        border: none;
+    }
+
+    .team_card--action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+        background: none;
+        border: none;
+
+        svg {
+            margin: 0;
+        }
+    }
+
+    .team_card--action-extra {
+        width: 2.5rem;
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: var(--primary);
+
+            &:hover {
+                color: var(--color-action);
+            }
+        }
+    }
+
+    .team_card--icon {
+        margin-bottom: var(--width_gutter_small);
+
+        svg {
+            align-self: center;
+        }
+    }
+
+    .team_card--icon svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .team_card--info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: calc( var(--width_gutter_small) / 2 );
+        padding-bottom: calc( var(--width_gutter_small) / 2 );
+        border-bottom: 1px solid var(--gray-300);
+    }
+
+    .team_card--details {
+        width: 100%;
+    }
+
+    .team_card-subline {
+        display: block;
+        font-size: var(--font-size-xs);
+    }
+
+    .team_card--assignments {
+        display: flex;
+        align-items: flex-start;
+        margin-top: calc( var(--width_gutter_small) / 2 );
+
+        svg {
+            margin-right: calc( var(--width_gutter_small) / 2 );
+            width: 1rem;
+            min-width: 1rem;
+            height: 1rem;
+            min-height: 1rem;
+        }
+    }
+
+    .team_card--assignments-members {
+        flex-direction: column;
+        text-align: left;
+
+        .assignment {
+            display: flex;
+            align-items: center;
+        }
+
+        .primary_member {
+            display: inline-block;
+            margin-left: calc( var(--width_gutter_small) / 2 );
+            width: 1.25em;
+            height: 1.25em;
+            padding: 0 0.125em;
+            line-height: 1.25em;
+            font-weight: var(--font-weight-bold);
+            color: white;
+            text-align: center;
+            background-color: var(--color-primary-light);
+            border-radius: 999px;
+        }
+    }
+
+    .team_card-assignment_header {
+        font-size: var(--font-size-sm);
+        font-weight: var(--font-weight-bold);
+    }
+
+    .team_card--assignment_list {
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .assignment {
+        height: 1rem;
+        font-size: var(--font-size-xs);
+        line-height: 1rem;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+
+        .team_section--grid {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.2fr));
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+
+        .team_section--grid {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.14286fr));
+        }
+    }
+
+    @include media-breakpoint-up(xx) {
+
+        .team_section--grid {
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 0.1fr));
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+// Kendo vars
+$base-theme: Bootstrap;
+$accent: $primary;
+
+$grid-border: $color-primary-dark;
+
+$grid-alt-bg: #ffffff;
+$grid-alt-border: $color-primary-dark;
+
+$grid-hovered-bg: #ffffff;
+
+$grid-header-bg: $color-primary-dark;
+$grid-header-text: #ffffff;
+$grid-header-border: $color-primary-dark;
+
+$cell-padding-x: 1rem;
+
+$series-a: $color-action;
+$series-b: lighten( $primary, 8% );
+$series-c: $gray-600;
+$series-d: lighten( $color-primary-light, 5% );
+$series-e: $gray-500;

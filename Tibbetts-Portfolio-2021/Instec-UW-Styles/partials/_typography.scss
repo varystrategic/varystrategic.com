@@ -1,0 +1,51 @@
+
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+    $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+    $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+    $min-breakpoint: $min / $responsive-unitless * 100;
+
+    @media (max-#{$dimension}: #{$min-breakpoint}) {
+        font-size: $min;
+    }
+
+    @if $max {
+        $max-breakpoint: $max / $responsive-unitless * 100;
+
+        @media (min-#{$dimension}: #{$max-breakpoint}) {
+            font-size: $max;
+        }
+    }
+
+    @if $fallback {
+        font-size: $fallback;
+    }
+
+    font-size: $responsive;
+}
+
+html {
+    @include responsive-font( 0.8vw, 16px, 18px );
+}
+
+h4 {
+    font-weight: var(--font-weight-xbold);
+}
+
+.single_line_ellipsis {
+    display: flex;
+    min-width: 0;
+
+    > * {
+        font-size: inherit;
+    }
+
+    .sle {
+        margin-bottom: -2px;
+        padding-bottom: 2px;
+        line-height: 1.25;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
